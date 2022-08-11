@@ -80,6 +80,7 @@ a {
     flex-flow: column wrap;
     flex: 2;
     width: 400px;
+    gap: 8px;
 }
 
 .awesome {
