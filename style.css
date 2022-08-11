@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    min-height: 100vh;
     
 }
 
@@ -36,10 +37,15 @@ a {
     color: #E5E7EB
 }
 
-.header, .content, .quote, .ad, .footer {
+.header, .quote, .content, .ad, .footer {
     display: flex;
     flex-direction: column;
     padding: 10px 100px;
+}
+
+.content, .ad, .footer {
+    align-items: center;
+    gap: 32px;
 }
 
 
@@ -100,7 +106,31 @@ a {
 }
 
 
+.cards {
+    display: flex;
+    gap: 32px;
+}
 
+.sect {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 6px;
+    align-items: center;
+    width: 100px;
+    color: grey;
+}
+
+.card {
+    border-radius: 25px;
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+}
+
+.subtext {
+    font-size: 12px;
+    text-align: center;
+}
 
 
 .info {
@@ -110,14 +140,31 @@ a {
 }
 
 .quote {
-
+    align-items: center;
     background-color: #E5E7EB;
     font-weight: light;
     font-style: italic;
-    font-size: 36px;
+    font-size: 18px;
+    text-align: center;
+    padding: 50px 0px;
 }
 
+.quote-content {
+    display: flex;
 
+}
+
+.credit {
+    display: flex;
+    font-weight: bolder;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 12px;
+}
+
+.quote-content, .credit {
+    width: 500px;
+}
 
 .footer {
     justify-content: center;
